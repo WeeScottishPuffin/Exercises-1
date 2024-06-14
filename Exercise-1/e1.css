@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue&family=Space+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@900&family=Space+Mono&display=swap');
+html {
+  height: 100%;
+  width: 100%;
+}
+h1{
+  font-weight: 900;
+}
+h2{
+  color:purple;
+  background-color:#feffb4;
+}
+.data{
+  width:100%;
+  float:left
+}
+.tqw{
+  width:75%;
+  float:left;
+}
+.sqw img{
+  width:100%;
+}
+.sqw{
+  width:25%;
+  float:right;
+}
+table, td{
+  border:1px solid;
+  border-spacing:0px;
+}
+thead tr td, td.b{
+  font-weight: 700;
+  text-align: center;
+}
+tr.emphasize td{
+  color:green;
+  border-color: black;
+}
+.col-red{
+  color:red;
+  font-weight: 600;
+}
+b.col-red{
+  font-weight: 900;
+  font-family: 'Roboto', sans-serif;
+}
+tbody tr td:first-child:not([colspan]){
+  text-decoration: underline;
+}
+tbody tr:nth-child(even){
+  background-color:lightgray;
+}
+h1,.col-red{
+  font-family: 'Comic Neue';
+}

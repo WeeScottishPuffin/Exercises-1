@@ -1,0 +1,84 @@
+@font-face {
+  font-family: segment;
+  src: url(segment.ttf);
+}
+html {
+  height: 100%;
+  width: 100%;
+}
+.panel{
+  background-color: rosybrown;
+  width:400px;
+  height:700px;
+  margin:auto;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.display{
+  background-color: black;
+  border-radius: 5px;
+  width:250px;
+  height:100px;
+  margin:auto;
+  padding:5px;
+  display: flex;
+  justify-content:space-between;
+  margin-bottom: 100px;
+}
+hr {
+  border: none;
+  border-top: 4px dotted black;
+  height: 1px;
+  width: 195px;
+}
+.digit{
+  font-family: segment;
+  color:red;
+  text-align:right;
+  font-size: 100px;
+  background-color:#f033;
+  width:calc(calc(100% - 10px) / 4);
+  height:100%;
+  border-radius: 2px;
+}
+.buttons{
+  width:200px;
+  margin:auto;
+  margin-bottom:25px;
+}
+.button{
+  width:50px;
+  height:50px;
+  font-size:20px;
+  border-radius: 100%;
+}
+.bottom .button{
+  font-size: unset;
+}
+.arrow{
+  background-image: url("arrow.png");
+  background-size: contain;
+  background-repeat:no-repeat;
+  background-position:center;
+}
+td{
+  text-align: center;
+  padding:7px;
+}
+#left{
+  transform: rotate(180deg);
+}
+.arrow.active{
+    background-image: url("arrow_active.png");
+}
+i{
+  font-size:20px;
+}
+.bottom{
+  margin:auto;
+  width:80%;
+  position: relative;
+  bottom:-50px;
+  display: flex;
+  justify-content: space-around;
+}
