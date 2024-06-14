@@ -1,0 +1,83 @@
+html {
+  height: 100%;
+  width: 100%;
+}
+body{
+  background-color:darkblue
+}
+.container{
+  margin: auto;
+  background-color:#066;
+  border-radius: 10px;
+  width:500px;
+  height:600px;
+  text-align: center;
+  padding:20px;
+  display: flex;
+  flex-direction:column;
+}
+h1,p,label{
+  width: 100%;
+  color:white;  
+  font-family: Arial, Helvetica, sans-serif;
+  font-size:30px;
+}
+form{
+  text-align: left;
+}
+.inpfield{
+  position: relative;
+  height:30px;
+  width:30px;
+  float:right;
+}
+.inpfield[type="text"],.inpfield[type="number"]{
+  width:100px;
+} 
+h1{
+  font-size: 40px;
+}
+input[disabled]{
+  background-color:#033;
+  color:white;
+  border-style: solid;
+  margin-left:20px;
+  width:460px;
+  height:50px;
+}
+.copy{
+  width:48px;
+  height:48px;
+  padding:2px;
+  font-size:30px;
+  background-color:dodgerblue;
+  border:none;
+  position: relative;
+  top:-52px;
+  right:-436px;
+}
+section{
+  margin-top:15px;
+}
+.gen{
+  background-color: dodgerblue;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  width:300px;
+  height:50px;
+  font-size:30px;
+  border:none;
+  margin-left:100px;
+  position: relative;
+  bottom:-40px;
+  cursor:pointer;
+}
+
+.gen[disabled]{
+  background-color: #153d66;
+  cursor:unset;
+}
+
+#output{
+    font-size:30px;
+}
