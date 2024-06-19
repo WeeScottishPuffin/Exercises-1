@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Password Generator</title>
+    <link href="style (redux).css" rel="stylesheet" type="text/css" />
+    <script src="gen (redux).js"></script>
+    <script src="upd.js"></script>
+  </head>
+  <body onload="generate()">
+    <div class="container">
+      <h1>Password Generator</h1>
+      <form>
+        <input type="text" id="output" disabled/>
+        <button id="cpbtn" type="button" class="copy" onclick="copy()">📋</button>
+        <section>
+          <label for="length">Password Length</label>
+          <input class="inpfield" id="length" name="length" type="number" min="8" max="22" value="8"/>
+        </section>
+        <section>
+          <label for="initText">Add Initial Text</label>
+          <input class="inpfield" id="initText" name="initText" type="text"/>
+        </section>
+        <section>
+          <label for="uppercase">Include Uppercase Letters</label>
+          <input checked class="inpfield" id="uppercase" name="uppercase" type="checkbox" oninput="update()"/>
+        </section>
+        <section>
+          <label for="lowercase">Include Lowercase Letters</label>
+          <input checked class="inpfield" id="lowercase" name="lowercase" type="checkbox" oninput="update()"/>
+        </section>
+        <section>
+          <label for="number">Include Numbers</label>
+          <input checked class="inpfield" id="number" name="number" type="checkbox" oninput="update()"/>
+        </section>
+        <section>
+          <label for="symbol">Include Symbols</label>
+          <input checked class="inpfield" id="symbol" name="symbol" type="checkbox" oninput="update()"/>
+        </section>
+        <section>
+          <button id="generator" type="button" class="gen" onclick="generate()">Generate Password</button>
+        </section>
+      </form>
+    </div>
+  </body>
+</html>
