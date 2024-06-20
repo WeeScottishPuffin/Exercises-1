@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>replit</title>
+    <link href="style (redux).css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div class="container" id="container">
+      <div class="topbar">
+        <a id="edit" href="javascript:edit()">Edit</a>
+        <p>Alarms</p>
+        <a class="bf" href="javascript:openPopup()">+</a>
+      </div>
+      <h2 id="placeholder">No alarms added yet!</h2>
+    </div>
+    <div id="popup"class="popup" style="display:none;">
+      <div class="psection title">
+        <h2>New Alarm</h2>
+      </div>
+      <div class="psection cont">
+        <input type="text" id="textin" name="name" value="alarm">
+        <input type="time" id="timein" name="time" value="00:00">
+      </div>
+      <div class="psection end">
+        <button onclick="popup.style.display='none'"style="border-bottom-left-radius: 15px; border-right: white 1px solid;">Close</button>
+        <button onclick="add()" style="border-bottom-right-radius:15px; float:right">Create</button>
+      </div>
+    </div>
+    <script src="redux.js"></script>
+  </body>
+</html>
+<!--
+TODO:
+- Time in 00:00 format                     DONE!
+- Validate inputs                          DONE!
+- New input system                         DONE!
+- Update css                               DONE!
+  - Borders                                DONE!
+  - Spacing                                DONE!
+  - Lines                                  DONE!
+- Better edit/remove functionality
+-->
